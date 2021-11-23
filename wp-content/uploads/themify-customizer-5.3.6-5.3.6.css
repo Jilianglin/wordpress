@@ -1,0 +1,21 @@
+/* Themify Customize Styling */
+body {	
+	font-family: "Poppins";	font-weight:normal;
+	font-size:15px;
+ 
+}
+h1 {	
+	font-family: "Playfair Display";	font-weight:normal;
+	font-size:95px;
+ 
+}
+h2 {	
+	font-family: "Playfair Display";	font-weight:normal;
+ 
+}
+#main-nav a, #main-nav > li > a, .transparent-header #main-nav a {	
+	color: #ffffff; 
+}
+#main-nav-wrap #main-nav a:hover, #main-nav-wrap #main-nav > li > a:hover {	
+	color: #d6cece; 
+}

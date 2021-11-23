@@ -1,0 +1,44 @@
+.tf_tooltip{
+	cursor:pointer;
+	outline:1px dashed rgba(180,180,180,.3);
+	outline-offset:1px;
+	position:relative;
+}
+.tf_tooltip_content{
+	background:rgba(33,33,33,.9);
+	color:#fff;
+	position:absolute;
+	bottom:100%;
+	left:50%;
+	right:auto;
+	transform:translate(-50%, -10px);
+	cursor:initial;
+	max-width:180px;
+	width:80px;
+	padding:.5em 1em;
+	font-size:.75em;
+	font-weight:normal;
+	font-style:none;
+	line-height:1.3;
+	border-radius:8px;
+	opacity:0;
+	visibility:hidden;
+	transition:opacity .5s ease, visibility .5s ease
+}
+.tf_tooltip_content:before{
+	content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    right:auto;
+    left:50%;
+    top:100%;
+    border:8px solid transparent;
+    border-top-color:rgba(33,33,33,.9);
+    box-sizing:border-box
+}
+.tf_tooltip:focus .tf_tooltip_content,
+.tf_tooltip:hover .tf_tooltip_content{
+	opacity:1;
+	visibility:visible;
+}
